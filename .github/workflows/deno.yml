@@ -42,9 +42,9 @@ jobs:
       - name: Build
         run: deno task build
 
-      - name: Deploy to Deno Deploy
+      - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "Titan"
-          entrypoint: https://deno.land/std@0.221.0/http/file_server.ts
-          root: dist
+          project: "lucky-eel-50"
+          entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
+          root: "dist"
